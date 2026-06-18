@@ -23,7 +23,6 @@
             position: relative;
         }
 
-        /* Fixed Valid CSS Grid Structure Matrix Pattern */
         .cyber-grid-bg {
             position: fixed; 
             top: 0; left: 0; width: 100vw; height: 100vh;
@@ -44,7 +43,7 @@
             pointer-events: none; 
         }
 
-        /* 2Step Fixed Foreground Authentication Layer Engine Layout */
+        /* 2Step Biometric Screen */
         #auth-gateway-layer {
             position: fixed; 
             top: 0; left: 0; width: 100vw; height: 100vh;
@@ -82,19 +81,17 @@
         @keyframes dynamicRotation { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes hardwarePulse { 0%, 100% { box-shadow: 0 0 10px rgba(0,255,255,0.2); } 50% { box-shadow: 0 0 35px rgba(0,255,102,0.6); border-color: var(--neon-green); } }
 
-        /* Main Screen Monitor Configuration setup values */
         .viewport-monitor {
             position: relative;
             z-index: 10;
             max-width: 1100px; 
             margin: 0 auto; 
             padding: 25px 15px;
-            display: none; /* Controlled structural state visibility via script */
+            display: none; 
             opacity: 0;
             transition: opacity 0.8s ease-out;
         }
 
-        /* Glitch Title configuration engine definitions */
         .hacker-glitch-title {
             font-size: 2.6rem; font-weight: 900; letter-spacing: 4px; text-align: center;
             color: #fff; position: relative; margin-bottom: 5px;
@@ -137,15 +134,16 @@
         }
         .cert-hologram-card img { width: 100%; border-radius: 4px; display: block; }
 
-        .social-payload-dock { margin: 50px 0 30px; display: flex; flex-direction: column; gap: 12px; }
-        .terminal-btn {
+        /* Social Segments Restructured */
+        .social-payload-dock { margin: 50px 0 30px; display: flex; flex-direction: column; gap: 15px; }
+        .social-btn-clear {
+            display: flex; align-items: center; justify-content: center; gap: 15px;
             background: rgba(0, 255, 255, 0.03); border: 1px solid var(--neon-cyan);
-            padding: 15px; text-align: center; color: var(--neon-cyan);
-            text-decoration: none; font-weight: bold; font-size: 14px;
-            border-radius: 4px; text-transform: uppercase; letter-spacing: 2px;
-            transition: all 0.3s ease;
+            padding: 16px; text-align: center; color: var(--neon-cyan);
+            text-decoration: none; font-weight: bold; font-size: 1.1rem;
+            border-radius: 6px; transition: all 0.3s ease;
         }
-        .terminal-btn:hover {
+        .social-btn-clear:hover {
             background: var(--neon-cyan); color: #000;
             box-shadow: 0 0 20px var(--neon-cyan);
         }
@@ -156,7 +154,6 @@
     <div class="cyber-grid-bg"></div>
     <canvas id="matrix-rain"></canvas>
 
-    <!-- Biometric Authentication Screen -->
     <div id="auth-gateway-layer">
         <div class="auth-vault-box">
             <h2 id="auth-header-node" style="letter-spacing: 2px; font-size: 18px;">CRITICAL FIREWALL LOCK</h2>
@@ -171,10 +168,9 @@
         </div>
     </div>
 
-    <!-- Main Dashboard Workspace -->
     <div class="viewport-monitor" id="primary-monitor">
         <div class="avatar-frame-box">
-            <img src="1000594765.jpg" alt="D. Rakesh Security Profile">
+            <img src="20260617_085454.jpg" alt="D. Rakesh Profile">
         </div>
 
         <h1 class="hacker-glitch-title">D. RAKESH</h1>
@@ -190,22 +186,25 @@
         <h2 class="credential-vault-header">// SECURE REPOSITORY CREDENTIALS</h2>
         
         <div class="credentials-hologram-grid">
-            <div class="cert-hologram-card"><img src="1000570134.png"></div>
-            <div class="cert-hologram-card"><img src="1000556728.png"></div>
-            <div class="cert-hologram-card"><img src="1000594664.png"></div>
-            <div class="cert-hologram-card"><img src="1000594679.png"></div>
+            <div class="cert-hologram-card"><img src="1.png" alt="Certificate 1"></div>
+            <div class="cert-hologram-card"><img src="VTCodeX_Certificate_VTCX-PY-2026-0006.png" alt="Certificate 2"></div>
         </div>
 
         <div class="social-payload-dock">
-            <h3 style="font-size: 13px; border-bottom: 1px dotted rgba(0,255,255,0.15); padding-bottom: 5px;">// OUTBOUND PORTS NODE</h3>
-            <a href="https://www.instagram.com/mr_rakesh_official1503?igsh=MW0xZWcycTB0NXpmYg==" target="_blank" class="terminal-btn">ACCESS INSTAGRAM NODE -></a>
-            <a href="https://www.linkedin.com/in/dokka-rakesh-1503ts" target="_blank" class="terminal-btn">ESTABLISH LINKEDIN HANDSHAKE -></a>
-            <a href="mailto:dokkarakesh88@gmail.com" class="terminal-btn">SEND DIRECT SECURE PACKETS (EMAIL)</a>
+            <h3 style="font-size: 14px; margin-bottom: 5px; color: var(--neon-green);">// CONTACT ARCHIVES</h3>
+            <a href="https://www.instagram.com/mr_rakesh_official1503?igsh=MW0xZWcycTB0NXpmYg==" target="_blank" class="social-btn-clear">
+                <span>📸</span> INSTAGRAM
+            </a>
+            <a href="https://www.linkedin.com/in/dokka-rakesh-1503ts" target="_blank" class="social-btn-clear">
+                <span>💼</span> LINKEDIN
+            </a>
+            <a href="mailto:dokkarakesh88@gmail.com" class="social-btn-clear">
+                <span>✉️</span> EMAIL
+            </a>
         </div>
     </div>
 
     <script>
-        // Matrix Canvas Engine Setup Rules
         const matrixCanvas = document.getElementById('matrix-rain');
         const matrixContext = matrixCanvas.getContext('2d');
         
@@ -231,7 +230,6 @@
         setInterval(triggerRainSequence, 35);
         window.addEventListener('resize', resizeMatrix);
 
-        // Valid System Authentication Animation Logic
         function executeSystemDecryption() {
             const header = document.getElementById('auth-header-node');
             const hint = document.getElementById('auth-terminal-hint');
